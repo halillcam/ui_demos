@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_demos/demos/inspiration.dart';
+import 'package:ui_demos/demos/trip_app_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,13 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-       
-      
-       
-      ),
-      home: InspirationDemo(),
+      theme: ThemeData.dark().copyWith(),
+      home: TripAppUi(),
     );
   }
 }
-
