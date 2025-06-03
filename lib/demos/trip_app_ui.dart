@@ -22,9 +22,9 @@ class _TripAppUiState extends State<TripAppUi> {
     return Scaffold(
       body: PageView(
         children: [
-          makePage(imagePaths.everestPath, Titles.everestTitle, Titles.everestSubtitle),
-          makePage(imagePaths.oceanPath, Titles.oceanTitle, Titles.oceanSubTitle),
-          makePage(imagePaths.bridgePath, Titles.goldenGateTitle, Titles.goldenGateSubTitle),
+          makePage(_imagePaths.everestPath, _Titles.everestTitle, _Titles.everestSubtitle),
+          makePage(_imagePaths.oceanPath, _Titles.oceanTitle, _Titles.oceanSubTitle),
+          makePage(_imagePaths.bridgePath, _Titles.goldenGateTitle, _Titles.goldenGateSubTitle),
         ],
       ),
     );
@@ -54,11 +54,11 @@ Widget makePage(String imagePath, String title, String subtitle) {
             SizedBox(
               height: 470,
             ),
-            Text(title, style: TextStyles.titleStyle),
+            Text(title, style: _TextStyles.titleStyle),
             SizedBox(
               height: 50,
             ),
-            Text(subtitle, style: TextStyles.subTitleStyle),
+            Text(subtitle, style: _TextStyles.subTitleStyle),
           ],
         ),
       ),
@@ -66,7 +66,7 @@ Widget makePage(String imagePath, String title, String subtitle) {
   );
 }
 
-class Titles {
+class _Titles {
   static const String everestTitle = "Everest";
   static const String everestSubtitle = "Nepalde yer alır dünyanın en yüksek noktasıdır";
   static const String oceanTitle = "Pasifik okyanusu";
@@ -77,13 +77,13 @@ class Titles {
       "Golden Gate Köprüsü Kaliforniya'daki San Francisco Körfezi'nin girişinde, Golden Gate Boğazı üzerinde bir asma köprüdür.";
 }
 
-class TextStyles {
+class _TextStyles {
   static const TextStyle titleStyle =
       TextStyle(color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold);
   static const TextStyle subTitleStyle = TextStyle(color: Colors.white54, fontSize: 20);
 }
 
-class imagePaths {
+class _imagePaths {
   static const everestPath = "assets/images/five.jpg";
   static const oceanPath = "assets/images/six.jpg";
   static const bridgePath = "assets/images/seven.jpg";
