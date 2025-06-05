@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_demos/demos/food_delivery.dart';
+import 'package:ui_demos/demos/fitness_app_ui/fitness_main.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(),
-      home: FoodDelivery(),
+      theme: ThemeData(),
+      home: FitnessMain(),
     );
   }
 }
