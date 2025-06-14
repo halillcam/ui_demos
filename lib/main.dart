@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_demos/demos/fitness_app_ui/fitness_detail.dart';
 import 'package:ui_demos/demos/fitness_app_ui/fitness_main.dart';
 
 void main() {
